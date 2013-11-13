@@ -55,6 +55,11 @@ textarea {
     padding: 0.2em 0;
 }
 
+/*font-family: 'Lora', serif;*/
+/*font-family: 'Merriweather', serif;/*
+/*font-family: 'Lato', sans-serif;*/
+/*font-family: 'Oswald', sans-serif;*/
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
@@ -65,8 +70,8 @@ textarea {
                 box-sizing: border-box;
 }
 
-.ie67 * {
-        behavior: url(/js/boxsizing.htc);
+.lt-ie8 * {
+        behavior: url(../js/vendor/boxsizing.htc);
 }
 
 
