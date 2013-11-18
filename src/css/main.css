@@ -1,18 +1,27 @@
-/* ==========================================================================
-   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
-   ========================================================================== */
+* {
+        -webkit-box-sizing: border-box;
+           -moz-box-sizing: border-box;
+                box-sizing: border-box;
+}
+.lt-ie8 * {
+        behavior: url(../js/vendor/boxsizing.htc);
+}
 
-html,
-button,
-input,
-select,
-textarea {
-    color: #222;
+html {
+    color: #000;
 }
 
 body {
     font-size: 1em;
     line-height: 1.4;
+    font-size: 16px;
+    font-family: Arial, sans-serif;;
+    background-image: url('../img/background.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    
+    width: 100%;
+    overflow-x: hidden;
 }
 
 ::-moz-selection {
@@ -25,81 +34,214 @@ body {
     text-shadow: none;
 }
 
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
 
 img {
     vertical-align: middle;
 }
 
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+h1, h2, h3, h4, h5 {
+    font-weight: normal;
+    line-height: 1;
+    margin: 0px;
 }
 
-textarea {
-    resize: vertical;
-}
-
-.chromeframe {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+p {
+    margin: 0px;
 }
 
 /*font-family: 'Lora', serif;*/
-/*font-family: 'Merriweather', serif;/*
+/*font-family: 'Merriweather', serif;*/
 /*font-family: 'Lato', sans-serif;*/
 /*font-family: 'Oswald', sans-serif;*/
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-/* switching box model for all elements */
-* {
-        -webkit-box-sizing: border-box;
-           -moz-box-sizing: border-box;
-                box-sizing: border-box;
-}
-
-.lt-ie8 * {
-        behavior: url(../js/vendor/boxsizing.htc);
-}
-
-
-body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
-}
-
 .wrapper {
-    width: 90%;
-    margin: 0 5%;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
+    
+    border: 1px solid red;
+    border-width: 0px 1px;
+}
+
+#logo {
+  position: relative;
+  padding-top: 77px;
+  margin-left: -40px;
+  font-family: 'Lato', sans-serif;  
+  font-weight: 100;
+  font-size: 279px;
+  line-height: 0.8;
+  text-transform: uppercase;
+  color: #fff;
+  z-index: 20;
+}
+
+#logo span {
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    font-family: 'Lora', serif;
+    font-weight: normal;
+    font-style: italic;
+    color: #b0aeb8;
+    font-size: 12px;
+    line-height: 1;
+}
+
+.main-container>.wrapper>section {
+    float:left;
+    position: relative;
+}
+
+#box-model {
+    margin-top: 330px;
+    /*width: 400px;*/
+    width: 42%;
+    padding: 0px 10px;
+    text-align: center;
+    color: #6e6c77;
+    font-family: 'Lato', serif;
+    font-size: 19px;
+    z-index: 30;
+}
+
+#box-model h2 {
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    font-style: italic;
+    color: #5f5d66;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#box-model img {
+    position:absolute;
+    top: -360px;
+    left: -10%;
 }
 
 
+#relatives {
+    /*width: 560px;*/
+    width: 58%;
+    padding-left: 54px;
+    margin: 5% 0px 33px;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    font-size: 25px;
+    z-index: 10;
+}
 
+#relatives .tagline {
+    position:relative;
+    font-weight: normal;
+    font-size: 13px;
+    text-transform: uppercase;
+    color:#cbb8a0;
+    z-index: 10;
+}
 
+#relatives h2{
+    position:relative;
+    margin-bottom: 27px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 75px;
+    color: #fdcd84;
+    text-transform: uppercase;
+    z-index:10;
+}
 
+#relatives p{
+    letter-spacing: -1px;
+}
 
+#relatives img{
+    position:absolute;
+    bottom: 66%;
+    left: -80px;
+    max-width: 160%;
+    z-index:1;
+}
 
+#afloat {
+    /*width: 160px;*/
+    width: 17%;
+    padding: 0px 20px 195px;
+    text-align: right;
+    color:#464646;
+    font-family: 'Lato', serif;
+    font-size:14px;
+    z-index: 10;
+}
+#afloat h2 {
+    margin: 10px 0px;
+    color:#24795a;
+    font-family: 'Oswald', serif;
+    font-size:21px;
+}
+#afloat img {
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    max-width: 110%;
+}
 
+#bullet {
+    /*width: 800px;*/
+    width: 83%;
+}
 
+#famous {
+    width: 100%;
+    background-color: #71625a;
+    font-family: 'Merriweather', serif;
+    font-size: 26px;
+    font-weight :300;
+    color: #fff;
+}
+#famous h2{
+    height: 120px;
+    line-height: 120px;
+    background-color: #524741;
+    text-align:center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 49px;
+    text-transform: uppercase;
+}
+#famous img{
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+#famous p{
+    padding: 0px 25px;
+    margin-bottom: 25px;
+}
+#famous .copyright a,
+#famous .copyright{
+    font-size: 18px;
+    color: rgba(255,255,255, 0.5);
+    
+}
+#famous .copyright a {
+    display: inline-block;
+    text-decoration:none;
+    border: 1px solid transparent;
+    -webkit-transition: color 500ms ease, border-color 500ms ease;
+    -moz-transition: color 500ms ease, border-color 500ms ease;
+    -ms-transition: color 500ms ease, border-color 500ms ease;
+    -o-transition: color 500ms ease, border-color 500ms ease;
+    transition: color 500ms ease, border-color 500ms ease;
+}
 
-
-
-
+#famous .copyright a:hover{
+    color: rgba(255,255,255, 1);
+    border-bottom-color: #fff;
+}
 
 /* ==========================================================================
    Media Queries
-   ========================================================================== */
+   ========================================================================== 
 
 @media only screen and (min-width: 480px) {
 
