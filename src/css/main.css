@@ -231,6 +231,12 @@ p {
     position: absolute;    
     bottom:0px;
     color: #e0e0e0;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase; 
+}
+
+#bullet li figcaption .unit {    
+    text-transform: none; 
 }
 
 #famous {
@@ -278,6 +284,64 @@ p {
 #famous .copyright a:hover{
     color: rgba(255,255,255, 1);
     border-bottom-color: #fff;
+}
+
+#border-bottom { 
+    /*width: 720px;*/
+    width: 75%;
+    padding-right: 12px;
+}
+#border-bottom img{ 
+    max-width: 110%;
+}
+
+#border-bottom h2,     
+#border-bottom h3 {
+    font-family: 'Oswald', sans-serif;
+    border-color: #000;
+    border-style: solid;
+    border-width: 0px
+}   
+
+#border-bottom h2{     
+    border-bottom-width: 20px;
+    margin-bottom: 20px;
+    line-height: 120px;
+    font-size: 82px;
+    text-transform: uppercase;
+}
+
+#border-bottom h3{
+    font-size: 39px;
+    line-height: 1.2;
+    padding-bottom: 16px;
+    border-bottom-width: 3px;
+    margin-bottom: 16px;
+}
+
+#border-bottom p {
+    display: inline;
+    font-family: 'Merriweather', serif;
+    font-size: 22px;    
+}
+
+#border-bottom p strong{
+    
+    font-weight: 900;    
+}
+#border-bottom p:after{
+    content:'°';
+    display: inline-block;
+    text-align:center;
+    width: 35px;
+    font-weight: 900; 
+}
+
+/**
+ TODO: Selectivizr
+*/
+#border-bottom article p:last-child:after{
+display: none;
 }
 
 /* ==========================================================================
