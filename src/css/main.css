@@ -224,15 +224,59 @@ p {
     display: inline-block;
     float: left;
     width: 20%;
-    height: 400px;
+    height: 420px;
 }
 
+#bullet li .img {
+    position: absolute;    
+    bottom:115px;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
 #bullet li figcaption {
     position: absolute;    
     bottom:0px;
     color: #e0e0e0;
     font-family: 'Oswald', sans-serif;
+    font-size: 32px;
     text-transform: uppercase; 
+}
+#bullet li .russian figcaption {
+    font-size: 39px;
+}
+#bullet li .thumper figcaption {
+    font-size: 40px;
+}
+#bullet li:last-child .thumper figcaption {
+    font-size: 32px;
+}
+
+#bullet li .type {    
+    display:block;
+    margin-bottom: 4px;
+    font-size: 79px;
+    line-height: 1;
+    text-transform: none;
+}
+
+#bullet li .russian .type {    
+    font-size: 31px;
+}
+#bullet li .thumper .type {    
+    font-size: 87px
+}
+#bullet li .make {    
+    display:block;
+    font-size: 28px;
+    line-height: 1;
+}
+
+#bullet li .russian .make {    
+    font-size: 40px;
+}
+#bullet li .thumper .make {    
+    font-size: 38px;
 }
 
 #bullet li figcaption .unit {    
