@@ -333,7 +333,7 @@ p {
 #border-bottom { 
     /*width: 720px;*/
     width: 75%;
-    padding-right: 12px;
+    padding-right: 11px;
 }
 #border-bottom img{ 
     max-width: 110%;
@@ -374,18 +374,166 @@ p {
     font-weight: 900;    
 }
 #border-bottom p:after{
-    content:'°';
+    content:'';
     display: inline-block;
     text-align:center;
     width: 35px;
+    height: 16px;
     font-weight: 900; 
+    background-image: url('../img/bullet-point.png');
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
-/**
- TODO: Selectivizr
-*/
 #border-bottom article p:last-child:after{
 display: none;
+}
+
+#movie {
+    /*width: 225px;*/
+    width: 23.4%;
+    position: relative;
+    margin-top: 15px;
+    margin-left: 15px;
+    background-color:#3a83bb;
+    color: #fff;
+    padding-top: 180px;
+    
+    font-family: 'Oswald', sans-serif;
+}
+
+#movie .inner{
+    padding: 20px 20px 20px 11px;
+} 
+#movie>.inner{
+    border-bottom: 2px dashed rgba(0,0,0,0.4);
+} 
+.no-rgba #movie>.inner:first-child{
+    border-color: #234f70;
+} 
+
+#movie h2{
+    text-transform: uppercase;
+    border-bottom: 8px solid rgba(255,255,255,0.2);
+    font-size: 31px;
+    text-align: justify;
+    padding-bottom: 18px;
+    margin-bottom: 20px;
+}
+
+.no-rgba #movie h2 {
+    border-color: #619cc9;
+}
+
+#movie h2 span{
+    font-size: 21px;
+}
+#movie  .summary{
+    font-family: 'Lora', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+}
+
+#movie img {
+    position: absolute;
+    top: -66px;
+    left: -33px
+}
+#movie .rating {
+    border-style: solid;
+    border-width: 5px 0px;
+    border-color: rgba(0,0,0,0.1);
+    color:rgba(255,255,255, 0.3);
+    font-size: 14px;
+    text-transform: uppercase
+}
+.no-rgba #movie .rating {
+    border-color: #3476a8;
+    color: #75a8d0;
+}
+   
+#movie .rating p{
+    width: 90px;
+    position: relative;
+    line-height:1.2;
+}
+#movie .rating .big{
+    font-size: 32px;
+}
+#movie .rating h3 {
+    display:none;
+}
+#movie .rating .percent {
+    position: absolute;
+    top: -3px;
+    right: -117px;
+    font-size: 54px;
+    line-height:1;
+    color: #fff;
+}
+
+#movie .rating .bar{
+    display:block;
+    position:relative;
+    width: 100%;
+    height: 8px;
+    margin-top: 20px;
+    background-color: rgba(255,255,255,0.2);
+}
+
+.no-rgba #movie .rating .bar{
+    background-color: #619cc9;
+}
+
+#movie .rating .filling{
+    display:block;
+    height: 8px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 20%;
+    background-color: #fff;
+}
+#movie .premiere h3{
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    text-align:center;
+    font-size: 14px;
+    color: rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.2);
+}
+.no-rgba #movie .premiere h3{
+    color: #619cc9;
+    background-color: #619cc9;
+}
+
+#movie .premiere h3 span{
+    display:inline-block;
+    background-color:#3a83bb;
+    padding: 0px 10px;
+}
+
+#movie .premiere .inner{
+    padding-right: 11px;
+}
+#movie .premiere p{
+    text-align: justify;
+    text-transform: uppercase;
+    font-size: 27px;
+    line-height: 1.3;
+}
+#movie .premiere span{
+    display:block;
+}
+#movie .premiere p .country{
+    font-size: 28px;
+    color: rgba(255,255,255,0.2);
+}
+.no-rgba #movie .premiere p .country{
+    color: #619cc9;
+}
+#movie .premiere p .date{
+    font-size: 39px;
 }
 
 /* ==========================================================================

@@ -99,17 +99,24 @@
                 </section>
                 
                 <section id="movie">
-                    <h2>Transformers <span>Revenge of the fallen</span></h2>
-                    <img src="#" alt="Transfomrers - Revenge of the fallen Blue Ray cover" />
-                    <p>A noisy, underplotted, and overlong special effects extravaganza that lacks a human touch.</p>
-                    
+                    <div class="inner">
+                        <img src="./img/transformers.png" alt="Transfomrers - Revenge of the fallen Blue Ray cover" /> 
+                        <h2>Transformers <span>Revenge of the fallen</span></h2>                                        
+                        <p class="summary">A noisy, underplotted, and overlong special effects extravaganza that lacks a human touch.</p>
+                    </div>
                     <section class="rating">
-                        <h3 class="ir">Rating</h3>
-                        <p>Rotten Tomato <span class="big">Rating</span> <span class="percent">20<span class="symbol">%</span></span></p>
+                        <div class="inner">
+                            <h3>Rating</h3>
+                            <p>Rotten Tomato <span class="big">Rating</span> <span class="percent">20<span class="symbol">%</span></span></p>
+                            
+                            <span class="bar"><span class="filling"></span></span>
+                        </div>
                     </section>
-                    <section class="">
-                        <h3>Wolrd Premiere</h3>
-                        <p><span>Den Haag theatre</span> <span>The netherlands</span><span>June 23, 2011</span></p>
+                    <section class="premiere">
+                        <div class="inner">
+                            <h3><span>World Premiere</span></h3>
+                            <p><span>Den Haag theatre</span> <span class="country">The netherlands</span><span class="date">June 23, 2011</span></p>
+                        </div>
                     </section>
                 </section>
                 
@@ -134,6 +141,9 @@
         </footer>
 
         <script src="js/vendor/jquery-1.10.1.min.js"></script>
+            <!--[if (gte IE 6)&(lte IE 8)]>
+              <script type="text/javascript" src="js/vendor/selectivizr-min.js"></script>
+            <![endif]-->
         <script src="js/main.js"></script>
     </body>
 </html>
