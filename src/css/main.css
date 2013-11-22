@@ -451,11 +451,15 @@ display: none;
     border-color: #3476a8;
     color: #75a8d0;
 }
-   
+
 #movie .rating p{
-    width: 90px;
-    position: relative;
     line-height:1.2;
+    text-align: right;
+}
+#movie .rating p>span{
+    width: 90px;
+    float: left;
+    margin-right: 5px;
 }
 #movie .rating .big{
     font-size: 32px;
@@ -464,9 +468,6 @@ display: none;
     display:none;
 }
 #movie .rating .percent {
-    position: absolute;
-    top: -3px;
-    right: -117px;
     font-size: 54px;
     line-height:1;
     color: #fff;
@@ -494,6 +495,14 @@ display: none;
     width: 20%;
     background-color: #fff;
 }
+
+#movie .premiere {
+    border-top: 2px dashed rgba(0,0,0,0.4);
+} 
+.no-rgba #movie .premiere{
+    border-color: #234f70;
+} 
+
 #movie .premiere h3{
     margin-bottom: 5px;
     text-transform: uppercase;
