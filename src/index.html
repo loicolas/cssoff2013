@@ -98,16 +98,16 @@
                     </article>
                 </section>
                 
-                <section id="movie">
+                <section id="movie" itemscope itemtype="http://schema.org/Movie">
                     <div class="inner">
-                        <img src="./img/transformers.png" alt="Transfomrers - Revenge of the fallen Blue Ray cover" /> 
-                        <h2>Transformers <span>Revenge of the fallen</span></h2>                                        
-                        <p class="summary">A noisy, underplotted, and overlong special effects extravaganza that lacks a human touch.</p>
+                        <img src="./img/transformers.png" alt="Transfomrers - Revenge of the fallen Blue Ray cover" itemprop="image" /> 
+                        <h2 itemprop="name">Transformers <span>Revenge of the fallen</span></h2>                                        
+                        <p class="summary" itemprop="description">A noisy, underplotted, and overlong special effects extravaganza that lacks a human touch.</p>
                     </div>
-                    <section class="rating">
+                    <section class="rating" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
                         <div class="inner">
                             <h3>Rating</h3>
-                            <p class="clearfix"><span>Rotten Tomato <span class="big">Rating</span></span> <span class="percent">20<span class="symbol">%</span></span></p>
+                            <p class="clearfix"><span>Rotten Tomato <span class="big">Rating</span></span> <span class="percent" itemprop="ratingValue">20<span class="symbol">%</span></span></p>
                             
                             <span class="bar"><span class="filling"></span></span>
                         </div>
@@ -136,7 +136,7 @@
             <div class="author" itemscope itemtype="http://schema.org/Person">
                 <p><span class="name" itemprop="name">Route Gregory</span>, <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="streetAddress">Building 31</span>
                     <span class="line"><span itemprop="postalCode">01630</span> <span itemprop="addressLocality">Prévessin-Moëns</span>, <span itemprop="addressCountry" itemscope itemtype="http://schema.org/Country"><span itemprop="name">France</span></span></span></span>
-                    <span class="line">+41 22 767 61 11</span>
+                    <span class="line" itemprop="telephone">+41 22 767 61 11</span>
                 </p>
             </div>
             <p class="copyright"><strong>2013 CSSOff</strong>, Volume 3</p>
