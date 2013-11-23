@@ -334,6 +334,8 @@ p {
     /*width: 720px;*/
     width: 75%;
     padding-right: 11px;
+    font-family: 'Merriweather', serif;
+    font-size: 22px;   
 }
 #border-bottom img{ 
     max-width: 110%;
@@ -364,9 +366,7 @@ p {
 }
 
 #border-bottom p {
-    display: inline;
-    font-family: 'Merriweather', serif;
-    font-size: 22px;    
+    display: inline; 
 }
 
 #border-bottom p strong{
@@ -393,13 +393,16 @@ display: none;
     /*width: 225px;*/
     width: 23.4%;
     position: relative;
-    margin-top: 15px;
-    margin-left: 15px;
+    margin: 15px 0px 25px 0px; 
+    padding: 180px 0px 10px;
     background-color:#3a83bb;
+    background-image: url('../img/ticket-bottom.png');
+    background-position: bottom center;
+    background-repeat: no-repeat;
     color: #fff;
-    padding-top: 180px;
     
     font-family: 'Oswald', sans-serif;
+
 }
 
 #movie .inner{
@@ -429,7 +432,7 @@ display: none;
     font-size: 21px;
 }
 #movie  .summary{
-    font-family: 'Lora', sans-serif;
+    font-family: 'Lora', serif;
     font-size: 16px;
     font-style: italic;
 }
@@ -471,6 +474,7 @@ display: none;
     font-size: 54px;
     line-height:1;
     color: #fff;
+    margin: -2px 0px 0px;
 }
 
 #movie .rating .bar{
@@ -543,6 +547,86 @@ display: none;
 }
 #movie .premiere p .date{
     font-size: 39px;
+}
+
+#overflow {
+    width: 100%;
+    padding: 130px 0px 80px;
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    font-style: italic;
+    color: #5e6c74;
+
+}
+#overflow h2 img{
+    position:absolute;
+    top:-67px;
+    left: -40px;
+
+}
+#overflow .content {
+    padding: 0px 10px;
+}
+#overflow .content p{
+    width: 730px;
+    clear: both;
+}
+#overflow .content p:nth-child(3n+1){
+    float: right;
+    text-align: right;
+    margin-bottom: 10px;
+    -webkit-transform:rotate(3deg);
+    -moz-transform:rotate(3deg);
+    -o-transform:rotate(3deg);
+    transform:rotate(3deg);
+    
+}
+#overflow .content p:nth-child(3n+2){
+    margin-bottom: 40px;
+    
+    -webkit-transform:rotate(-2deg);
+    -moz-transform:rotate(-2deg);
+    -o-transform:rotate(-2deg);
+    transform:rotate(-2deg);
+}
+#overflow .content p:nth-child(3n+3){
+    padding-left: 110px;
+    -webkit-transform:rotate(1deg);
+    -moz-transform:rotate(1deg);
+    -o-transform:rotate(1deg);
+    transform:rotate(1deg);
+}
+
+#footer {
+    width: 100%;
+    padding: 23px 0px 60px;
+    border-top: 1px solid #e5e5e5;
+    overflow:hidden;
+    
+    color:#8c8c8c;
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+}
+
+#footer strong{
+    font-weight: normal;
+    color: #000;
+}
+    
+
+#footer .author {
+    float: right;
+    text-align: right;
+    color: #989898;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    font-size: 13px;
+}
+#footer .author .name{
+    font-weight: 900;
+}
+#footer .author .line{
+    display:block;
 }
 
 /* ==========================================================================
