@@ -75,23 +75,39 @@ p {
   color: #fff;
   z-index: 20;
   
-  -webkit-transition: font-size 400ms ease;
-  -moz-transition: font-size 400ms ease;
-  -ms-transition: font-size 400ms ease;
-  -o-transition: font-size 400ms ease;
-  transition: font-size 400ms ease;
+  -webkit-transition: font-size 400ms ease, text-shadow 400ms ease;
+  -moz-transition: font-size 400ms ease, text-shadow 400ms ease;
+  -ms-transition: font-size 400ms ease, text-shadow 400ms ease;
+  -o-transition: font-size 400ms ease, text-shadow 400ms ease;
+  transition: font-size 400ms ease, text-shadow 400ms ease;
+}
+
+#logo:hover {
+  text-shadow: 2px 2px 5px #b0aeb8;
+  filter: dropshadow(color=#b0aeb8, offx=2, offy=2); 
 }
 
 #logo span {
     position: absolute;
-    top: 100px;
-    right: 0px;
+    top: 60px;
+    right: 10px;
     font-family: 'Lora', serif;
     font-weight: normal;
     font-style: italic;
     color: #b0aeb8;
     font-size: 12px;
     line-height: 1;
+    
+    -webkit-transition: top 400ms ease, right 400ms ease;
+    -moz-transition: top 400ms ease, right 400ms ease;
+    -ms-transition: top 400ms ease, right 400ms ease;
+    -o-transition: top 400ms ease, right 400ms ease;
+    transition: top 400ms ease, right 400ms ease;
+}
+
+#logo:hover span{
+  text-shadow: 0px 0px 0px #b0aeb8;
+  filter: dropshadow(color=#b0aeb8, offx=0, offy=0); 
 }
 
 .main-container>.wrapper>section {
@@ -260,6 +276,21 @@ p {
     text-align: center;
     z-index: 1;
 }
+#bullet li:hover img{
+    -webkit-transition: -webkit-transform 400ms ease;
+    -moz-transition: -moz-transform 400ms ease;
+    -ms-transition: -ms-transform 400ms ease;
+    -o-transition: -o-transform 400ms ease;
+    transition: transform 400ms ease;
+}
+#bullet li:hover img{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
 #bullet li figcaption {
     position: absolute;    
     bottom:0px;
@@ -269,6 +300,15 @@ p {
     text-transform: uppercase; 
     width: 100%;
     text-align: center;
+    
+    -webkit-transition: color 400ms ease;
+    -moz-transition: color 400ms ease;
+    -ms-transition: color 400ms ease;
+    -o-transition: color 400ms ease;
+    transition: color 400ms ease;
+}
+#bullet li:hover figcaption {
+    color: #ccc;
 }
 #bullet li .russian figcaption {
     font-size: 39px;
@@ -717,7 +757,9 @@ display: none;
         background-position: center top;
     }
     
-
+    #logo span {
+        top: 100px;
+    }
     
     #box-model {
         margin: 330px 0px 0px;
@@ -824,6 +866,10 @@ display: none;
 }
 
 @media only screen and (min-width: 1024px) {
+     #logo span {
+        right: 0px;
+    }
+    
     #bullet h2 {
         margin: 0px;
     }
