@@ -61,9 +61,6 @@ p {
     max-width: 960px;
     margin: 0 auto;
     position: relative;
-    
-    border: 1px solid red;
-    border-width: 0px 1px;
 }
 
 #logo {
@@ -72,11 +69,17 @@ p {
   margin-left: -40px;
   font-family: 'Lato', sans-serif;  
   font-weight: 100;
-  font-size: 279px;
+  font-size: 179px;
   line-height: 0.8;
   text-transform: uppercase;
   color: #fff;
   z-index: 20;
+  
+  -webkit-transition: font-size 400ms ease;
+  -moz-transition: font-size 400ms ease;
+  -ms-transition: font-size 400ms ease;
+  -o-transition: font-size 400ms ease;
+  transition: font-size 400ms ease;
 }
 
 #logo span {
@@ -317,13 +320,18 @@ p {
     color: #fff;
 }
 #famous h2{
-    height: 120px;
-    line-height: 120px;
+    line-height: 70px;
     background-color: #524741;
     text-align:center;
     font-family: 'Oswald', sans-serif;
-    font-size: 49px;
+    font-size: 29px;
     text-transform: uppercase;
+    
+    -webkit-transition: font-size 400ms ease, line-height 400ms ease;
+    -moz-transition: font-size 400ms ease, line-height 400ms ease;
+    -ms-transition: font-size 400ms ease, line-height 400ms ease;
+    -o-transition: font-size 400ms ease, line-height 400ms ease;
+    transition: font-size 400ms ease, line-height 400ms ease;
 }
 #famous img{
     max-width: 100%;
@@ -343,11 +351,11 @@ p {
     display: inline-block;
     text-decoration:none;
     border: 1px solid transparent;
-    -webkit-transition: color 500ms ease, border-color 500ms ease;
-    -moz-transition: color 500ms ease, border-color 500ms ease;
-    -ms-transition: color 500ms ease, border-color 500ms ease;
-    -o-transition: color 500ms ease, border-color 500ms ease;
-    transition: color 500ms ease, border-color 500ms ease;
+    -webkit-transition: color 400ms ease, border-color 400ms ease;
+    -moz-transition: color 400ms ease, border-color 400ms ease;
+    -ms-transition: color 400ms ease, border-color 400ms ease;
+    -o-transition: color 400ms ease, border-color 400ms ease;
+    transition: color 400ms ease, border-color 400ms ease;
 }
 
 #famous .copyright a:hover{
@@ -356,11 +364,16 @@ p {
 }
 
 #border-bottom { 
-    /*width: 720px;*/
-    width: 75%;
-    padding-right: 11px;
+    width: 100%;
+    padding: 0px 10px;
     font-family: 'Merriweather', serif;
     font-size: 22px;   
+    
+    -webkit-transition: padding 400ms ease;
+    -moz-transition: padding 400ms ease;
+    -ms-transition: padding 400ms ease;
+    -o-transition: padding 400ms ease;
+    transition: padding 400ms ease;
 }
 #border-bottom img{ 
     max-width: 110%;
@@ -371,19 +384,25 @@ p {
     font-family: 'Oswald', sans-serif;
     border-color: #000;
     border-style: solid;
-    border-width: 0px
+    border-width: 0px;
+        
+    -webkit-transition: font-size 400ms ease;
+    -moz-transition: font-size  400ms ease;
+    -ms-transition: font-size  400ms ease;
+    -o-transition: font-size  400ms ease;
+    transition: font-size  400ms ease;
 }   
 
 #border-bottom h2{     
     border-bottom-width: 20px;
     margin-bottom: 20px;
-    line-height: 120px;
-    font-size: 82px;
+    line-height: 60px;
+    font-size: 41px;
     text-transform: uppercase;
 }
 
 #border-bottom h3{
-    font-size: 39px;
+    font-size: 30px;
     line-height: 1.2;
     padding-bottom: 16px;
     border-bottom-width: 3px;
@@ -415,16 +434,16 @@ display: none;
 }
 
 #movie {
-    /*width: 225px;*/
-    width: 23.4%;
+    width: 100%;
     position: relative;
-    margin: 15px 0px 25px 0px; 
+    margin: 80px 0px 25px 0px; 
     padding: 180px 0px 10px;
     background-color:#3a83bb;
     background-image: url('../img/ticket-bottom.png');
     background-position: bottom center;
     background-repeat: no-repeat;
     color: #fff;
+    text-align: center;
     
     font-family: 'Oswald', sans-serif;
 
@@ -444,9 +463,15 @@ display: none;
     text-transform: uppercase;
     border-bottom: 8px solid rgba(255,255,255,0.2);
     font-size: 31px;
-    text-align: justify;
+    text-align: center;
     padding-bottom: 18px;
     margin-bottom: 20px;
+    
+    -webkit-transition: text-align 400ms ease;
+    -moz-transition: text-align  400ms ease;
+    -ms-transition: text-align  400ms ease;
+    -o-transition: text-align  400ms ease;
+    transition: text-align  400ms ease;
 }
 
 .no-rgba #movie h2 {
@@ -462,10 +487,11 @@ display: none;
     font-style: italic;
 }
 
-#movie img {
+#movie .img {
     position: absolute;
     top: -66px;
-    left: -33px
+    width: 100%;
+    height: 365px;
 }
 #movie .rating {
     border-style: solid;
@@ -482,11 +508,9 @@ display: none;
 
 #movie .rating p{
     line-height:1.2;
-    text-align: right;
 }
 #movie .rating p>span{
     width: 90px;
-    float: left;
     margin-right: 5px;
 }
 #movie .rating .big{
@@ -555,7 +579,6 @@ display: none;
     padding-right: 11px;
 }
 #movie .premiere p{
-    text-align: justify;
     text-transform: uppercase;
     font-size: 27px;
     line-height: 1.3;
@@ -581,25 +604,40 @@ display: none;
     font-size: 16px;
     font-style: italic;
     color: #5e6c74;
+    -webkit-transition: padding 400ms ease;
+    -moz-transition: padding  400ms ease;
+    -ms-transition: padding  400ms ease;
+    -o-transition: padding  400ms ease;
+    transition: padding  400ms ease;
 
 }
 #overflow h2 img{
     position:absolute;
     top:-67px;
     left: -40px;
-
+    
+    -webkit-transition: top 400ms ease;
+    -moz-transition: top  400ms ease;
+    -ms-transition: top  400ms ease;
+    -o-transition: top  400ms ease;
+    transition: top  400ms ease;
 }
 #overflow .content {
     padding: 0px 10px;
 }
 #overflow .content p{
-    width: 730px;
+    max-width: 730px;
     clear: both;
+    margin-bottom: 5%;
+    -webkit-transition: margin 400ms ease;
+    -moz-transition: margin  400ms ease;
+    -ms-transition: margin  400ms ease;
+    -o-transition: margin  400ms ease;
+    transition: margin  400ms ease;
 }
 #overflow .content p:nth-child(3n+1){
     float: right;
     text-align: right;
-    margin-bottom: 10px;
     -webkit-transform:rotate(3deg);
     -moz-transform:rotate(3deg);
     -o-transform:rotate(3deg);
@@ -624,13 +662,19 @@ display: none;
 
 #footer {
     width: 100%;
-    padding: 23px 0px 60px;
+    padding: 23px 10px 60px;
     border-top: 1px solid #e5e5e5;
     overflow:hidden;
     
     color:#8c8c8c;
     font-family: 'Lato', sans-serif;
     font-size: 17px;
+    
+    -webkit-transition: padding 400ms ease;
+    -moz-transition: padding  400ms ease;
+    -ms-transition: padding  400ms ease;
+    -o-transition: padding  400ms ease;
+    transition: padding  400ms ease;
 }
 
 #footer strong{
@@ -663,12 +707,17 @@ display: none;
         float: left;
         max-width: 65%;
     }
+        #logo {
+        font-size: 279px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
     body {
         background-position: center top;
     }
+    
+
     
     #box-model {
         margin: 330px 0px 0px;
@@ -717,7 +766,10 @@ display: none;
         max-width: 100%;
     }
     
-    
+    #famous h2{
+        line-height: 120px;
+        font-size: 49px;
+    }
     
     #bullet {
         width: 83%;
@@ -725,6 +777,50 @@ display: none;
     #bullet h2 {
         margin: 0px 20px 0px 0px;
     }
+    
+    #border-bottom { 
+        width: 60%;
+    }
+    
+    #border-bottom h2{     
+        font-size: 61px;
+        line-height: 80px;
+    }
+    
+    #movie h2 span{
+        display: block;
+    }
+    
+    #border-bottom h3{     
+        font-size: 35px;
+    }
+    
+    #movie {
+        float:right;
+        width: 36%;
+        margin: 15px 0px 25px 0px;
+    }
+    
+    #movie .rating p>span{
+        float: left;
+    }
+    #movie .rating p{
+        text-align: right;
+    }
+    
+    #movie .rating .percent {
+        margin: -2px 0px 0px 10px;
+    }
+    
+    #overflow {
+        padding: 170px 0px 80px;
+    }
+    
+    #overflow h2 img{
+        top:-40px;
+    }
+
+   
 }
 
 @media only screen and (min-width: 1024px) {
@@ -734,6 +830,55 @@ display: none;
     
     #bullet li:nth-child(n) {
         width: 20%;
+    }
+    
+    #border-bottom { 
+        width: 75%;
+        padding:0px 11px 0px 0px;
+    }
+    
+    #border-bottom h2{     
+        font-size: 82px;
+        line-height: 120px;
+    }
+    
+    #border-bottom h3{     
+        font-size: 39px;
+    }
+    #movie {
+        width: 23.4%;
+        text-align: left;
+    }
+    #movie h2{
+        text-align: justify;
+    }
+
+    #movie .img {
+        left: -33px;
+    }
+    
+    #movie .premiere p{
+        text-align: justify;
+    }
+    #movie .rating .percent {
+        margin: -2px 0px 0px;
+    }
+    
+    #overflow {
+        padding: 130px 0px 80px;
+    }
+    
+    #overflow h2 img{
+        top:-67px;
+    }
+
+    #overflow .content p:nth-child(3n+1){
+        margin-bottom: 10px;
+    }
+    
+    
+    #footer {
+        padding: 23px 0px 60px;
     }
 
 }
