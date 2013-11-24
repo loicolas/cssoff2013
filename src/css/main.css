@@ -17,11 +17,18 @@ body {
     font-size: 16px;
     font-family: Arial, sans-serif;;
     background-image: url('../img/background.png');
-    background-position: center top;
+    background-position: left top;
     background-repeat: no-repeat;
     
     width: 100%;
     overflow-x: hidden;
+    
+    -webkit-transition: background 400ms ease;
+    -moz-transition: background 400ms ease;
+    -ms-transition: background 400ms ease;
+    -o-transition: background 400ms ease;
+    transition: background 400ms ease;
+    
 }
 
 ::-moz-selection {
@@ -48,11 +55,6 @@ h1, h2, h3, h4, h5 {
 p {
     margin: 0px;
 }
-
-/*font-family: 'Lora', serif;*/
-/*font-family: 'Merriweather', serif;*/
-/*font-family: 'Lato', sans-serif;*/
-/*font-family: 'Oswald', sans-serif;*/
 
 .wrapper {
     width: 100%;
@@ -95,15 +97,21 @@ p {
 }
 
 #box-model {
-    margin-top: 330px;
-    /*width: 400px;*/
-    width: 42%;
+    
+    width: 100%;
     padding: 0px 10px;
+    margin-top: -20px;
     text-align: center;
     color: #6e6c77;
     font-family: 'Lato', serif;
     font-size: 19px;
     z-index: 30;
+    
+    -webkit-transition: width 400ms ease;
+    -moz-transition: width 400ms ease;
+    -ms-transition: width 400ms ease;
+    -o-transition: width 400ms ease;
+    transition: width 400ms ease;
 }
 
 #box-model h2 {
@@ -116,17 +124,22 @@ p {
 }
 
 #box-model img {
-    position:absolute;
-    top: -360px;
-    left: -10%;
+    position:relative;
+    left: 2%;
+    max-width:95%;
+    
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    transition: all 400ms ease;
 }
 
 
 #relatives {
-    /*width: 560px;*/
-    width: 58%;
-    padding-left: 54px;
-    margin: 5% 0px 33px;
+    width: 100%;
+    padding: 0px 10px;
+    margin: 20px 0px 33px;
     font-family: 'Merriweather', serif;
     font-weight: 300;
     font-size: 25px;
@@ -157,17 +170,13 @@ p {
 }
 
 #relatives img{
-    position:absolute;
-    bottom: 66%;
-    left: -80px;
-    max-width: 160%;
-    z-index:1;
+    max-width: 110%;
+    margin: 0px 0px 0px -10%;
 }
 
 #afloat {
-    /*width: 160px;*/
-    width: 17%;
-    padding: 0px 20px 195px;
+    width: 100%;
+    padding: 0px 20px 0px;
     text-align: right;
     color:#464646;
     font-family: 'Lato', serif;
@@ -175,21 +184,27 @@ p {
     z-index: 10;
 }
 #afloat h2 {
+    width: 100%;
     margin: 10px 0px;
     color:#24795a;
     font-family: 'Oswald', serif;
     font-size:21px;
+    text-align: left;
+    
+    -webkit-transition: text-align 400ms ease;
+    -moz-transition: text-align 400ms ease;
+    -ms-transition: text-align 400ms ease;
+    -o-transition: text-align 400ms ease;
+    transition: text-align 400ms ease;
 }
+
 #afloat img {
-    position: absolute;
-    bottom: -20px;
-    left: 0px;
-    max-width: 110%;
+    max-width: 100%;
+    margin-top: 10px;
 }
 
 #bullet {
-    /*width: 800px;*/
-    width: 83%;
+    width: 100%;
 }
 
 #bullet h2{
@@ -223,8 +238,16 @@ p {
     position: relative;
     display: inline-block;
     float: left;
-    width: 20%;
-    height: 420px;
+    width: 50%;
+    height: 405px;
+    margin: 15px 0px;
+    border-right: 1px solid #e5e5e5;
+}
+#bullet li:last-child {
+    border-right: 1px solid transparent;
+}
+#bullet li:nth-child(3){
+    width: 100%;
 }
 
 #bullet li .img {
@@ -241,6 +264,8 @@ p {
     font-family: 'Oswald', sans-serif;
     font-size: 32px;
     text-transform: uppercase; 
+    width: 100%;
+    text-align: center;
 }
 #bullet li .russian figcaption {
     font-size: 39px;
@@ -632,15 +657,86 @@ display: none;
 /* ==========================================================================
    Media Queries
    ========================================================================== 
-
+*/
 @media only screen and (min-width: 480px) {
-
+    #afloat p {
+        float: left;
+        max-width: 65%;
+    }
 }
 
 @media only screen and (min-width: 768px) {
-
+    body {
+        background-position: center top;
+    }
+    
+    #box-model {
+        margin: 330px 0px 0px;
+        width: 42%;
+    }
+    
+    #box-model img {
+        position:absolute;
+        top: -360px;
+        left: -10%;
+        max-width:100%
+    }
+    
+    #relatives {
+        width: 58%;
+        padding: 0px 0px 0px 54px;
+        margin-top: 5%;
+    }
+    
+    #relatives img{
+        position:absolute;
+        left: -100px;
+        margin: 0px;
+        max-width: 160%;
+        bottom: 66%;
+        z-index:1;
+    }
+    
+    #afloat {
+        width: 17%;
+        padding: 0px 20px 195px;
+    }
+    
+    #afloat img {
+        position: absolute;
+        bottom: -20px;
+        left: 0px;
+        max-width: 110%;
+    }
+    
+    #afloat h2 {
+        text-align: right;
+    }
+    #afloat p {
+        float: none;
+        max-width: 100%;
+    }
+    
+    
+    
+    #bullet {
+        width: 83%;
+    }
+    #bullet h2 {
+        margin: 0px 20px 0px 0px;
+    }
 }
 
+@media only screen and (min-width: 1024px) {
+    #bullet h2 {
+        margin: 0px;
+    }
+    
+    #bullet li:nth-child(n) {
+        width: 20%;
+    }
+
+}
 @media only screen and (min-width: 1140px) {
 
 }
