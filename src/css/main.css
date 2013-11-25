@@ -23,11 +23,11 @@ body {
     width: 100%;
     overflow-x: hidden;
     
-    -webkit-transition: background 400ms ease;
-    -moz-transition: background 400ms ease;
-    -ms-transition: background 400ms ease;
-    -o-transition: background 400ms ease;
-    transition: background 400ms ease;
+    -webkit-transition: background 800ms ease;
+    -moz-transition: background 800ms ease;
+    -ms-transition: background 800ms ease;
+    -o-transition: background 800ms ease;
+    transition: background 800ms ease;
     
 }
 
@@ -75,11 +75,11 @@ p {
   color: #fff;
   z-index: 20;
   
-  -webkit-transition: font-size 400ms ease, text-shadow 400ms ease;
-  -moz-transition: font-size 400ms ease, text-shadow 400ms ease;
-  -ms-transition: font-size 400ms ease, text-shadow 400ms ease;
-  -o-transition: font-size 400ms ease, text-shadow 400ms ease;
-  transition: font-size 400ms ease, text-shadow 400ms ease;
+  -webkit-transition: font-size 800ms ease, text-shadow 800ms ease;
+  -moz-transition: font-size 800ms ease, text-shadow 800ms ease;
+  -ms-transition: font-size 800ms ease, text-shadow 800ms ease;
+  -o-transition: font-size 800ms ease, text-shadow 800ms ease;
+  transition: font-size 800ms ease, text-shadow 800ms ease;
 }
 
 #logo:hover {
@@ -98,11 +98,11 @@ p {
     font-size: 12px;
     line-height: 1;
     
-    -webkit-transition: top 400ms ease, right 400ms ease;
-    -moz-transition: top 400ms ease, right 400ms ease;
-    -ms-transition: top 400ms ease, right 400ms ease;
-    -o-transition: top 400ms ease, right 400ms ease;
-    transition: top 400ms ease, right 400ms ease;
+    -webkit-transition: top 800ms ease, right 800ms ease;
+    -moz-transition: top 800ms ease, right 800ms ease;
+    -ms-transition: top 800ms ease, right 800ms ease;
+    -o-transition: top 800ms ease, right 800ms ease;
+    transition: top 800ms ease, right 800ms ease;
 }
 
 #logo:hover span{
@@ -126,11 +126,11 @@ p {
     font-size: 19px;
     z-index: 30;
     
-    -webkit-transition: width 400ms ease;
-    -moz-transition: width 400ms ease;
-    -ms-transition: width 400ms ease;
-    -o-transition: width 400ms ease;
-    transition: width 400ms ease;
+    -webkit-transition: width 800ms ease;
+    -moz-transition: width 800ms ease;
+    -ms-transition: width 800ms ease;
+    -o-transition: width 800ms ease;
+    transition: width 800ms ease;
 }
 
 #box-model h2 {
@@ -147,11 +147,11 @@ p {
     left: 2%;
     max-width:95%;
     
-    -webkit-transition: all 400ms ease;
-    -moz-transition: all 400ms ease;
-    -ms-transition: all 400ms ease;
-    -o-transition: all 400ms ease;
-    transition: all 400ms ease;
+    -webkit-transition: all 800ms ease;
+    -moz-transition: all 800ms ease;
+    -ms-transition: all 800ms ease;
+    -o-transition: all 800ms ease;
+    transition: all 800ms ease;
 }
 
 
@@ -210,11 +210,11 @@ p {
     font-size:21px;
     text-align: left;
     
-    -webkit-transition: text-align 400ms ease;
-    -moz-transition: text-align 400ms ease;
-    -ms-transition: text-align 400ms ease;
-    -o-transition: text-align 400ms ease;
-    transition: text-align 400ms ease;
+    -webkit-transition: text-align 800ms ease;
+    -moz-transition: text-align 800ms ease;
+    -ms-transition: text-align 800ms ease;
+    -o-transition: text-align 800ms ease;
+    transition: text-align 800ms ease;
 }
 
 #afloat img {
@@ -277,11 +277,11 @@ p {
     z-index: 1;
 }
 #bullet li:hover img{
-    -webkit-transition: -webkit-transform 400ms ease;
-    -moz-transition: -moz-transform 400ms ease;
-    -ms-transition: -ms-transform 400ms ease;
-    -o-transition: -o-transform 400ms ease;
-    transition: transform 400ms ease;
+    -webkit-transition: -webkit-transform 800ms ease;
+    -moz-transition: -moz-transform 800ms ease;
+    -ms-transition: -ms-transform 800ms ease;
+    -o-transition: -o-transform 800ms ease;
+    transition: transform 800ms ease;
 }
 #bullet li:nth-child(3) img{
      -webkit-transform: rotate(90deg);
@@ -309,11 +309,11 @@ p {
     width: 100%;
     text-align: center;
     
-    -webkit-transition: color 400ms ease;
-    -moz-transition: color 400ms ease;
-    -ms-transition: color 400ms ease;
-    -o-transition: color 400ms ease;
-    transition: color 400ms ease;
+    -webkit-transition: color 800ms ease;
+    -moz-transition: color 800ms ease;
+    -ms-transition: color 800ms ease;
+    -o-transition: color 800ms ease;
+    transition: color 800ms ease;
 }
 #bullet li:hover figcaption {
     color: #ccc;
@@ -375,21 +375,21 @@ p {
     font-size: 29px;
     text-transform: uppercase;
     
-    -webkit-transition: font-size 400ms ease, line-height 400ms ease;
-    -moz-transition: font-size 400ms ease, line-height 400ms ease;
-    -ms-transition: font-size 400ms ease, line-height 400ms ease;
-    -o-transition: font-size 400ms ease, line-height 400ms ease;
-    transition: font-size 400ms ease, line-height 400ms ease;
+    -webkit-transition: font-size 800ms ease, line-height 800ms ease;
+    -moz-transition: font-size 800ms ease, line-height 800ms ease;
+    -ms-transition: font-size 800ms ease, line-height 800ms ease;
+    -o-transition: font-size 800ms ease, line-height 800ms ease;
+    transition: font-size 800ms ease, line-height 800ms ease;
 }
 
-#famous img{
+#famous .map img{
     max-width: 100%;
     margin-bottom: 20px;
-    -webkit-transition: top 400ms ease;
-    -moz-transition: top 400ms ease;
-    -ms-transition: top 400ms ease;
-    -o-transition: top 400ms ease;
-    transition: top 400ms ease;
+    -webkit-transition: left 800ms ease;
+    -moz-transition: left 800ms ease;
+    -ms-transition: left 800ms ease;
+    -o-transition: left 800ms ease;
+    transition: left 800ms ease;
 }
 
 #famous .map iframe {
@@ -410,11 +410,11 @@ p {
     display: inline-block;
     text-decoration:none;
     border: 1px solid transparent;
-    -webkit-transition: color 400ms ease, border-color 400ms ease;
-    -moz-transition: color 400ms ease, border-color 400ms ease;
-    -ms-transition: color 400ms ease, border-color 400ms ease;
-    -o-transition: color 400ms ease, border-color 400ms ease;
-    transition: color 400ms ease, border-color 400ms ease;
+    -webkit-transition: color 800ms ease, border-color 800ms ease;
+    -moz-transition: color 800ms ease, border-color 800ms ease;
+    -ms-transition: color 800ms ease, border-color 800ms ease;
+    -o-transition: color 800ms ease, border-color 800ms ease;
+    transition: color 800ms ease, border-color 800ms ease;
 }
 
 #famous .copyright a:hover{
@@ -428,11 +428,11 @@ p {
     font-family: 'Merriweather', serif;
     font-size: 22px;   
     
-    -webkit-transition: padding 400ms ease;
-    -moz-transition: padding 400ms ease;
-    -ms-transition: padding 400ms ease;
-    -o-transition: padding 400ms ease;
-    transition: padding 400ms ease;
+    -webkit-transition: padding 800ms ease;
+    -moz-transition: padding 800ms ease;
+    -ms-transition: padding 800ms ease;
+    -o-transition: padding 800ms ease;
+    transition: padding 800ms ease;
 }
 #border-bottom img{ 
     max-width: 110%;
@@ -445,11 +445,11 @@ p {
     border-style: solid;
     border-width: 0px;
         
-    -webkit-transition: font-size 400ms ease;
-    -moz-transition: font-size  400ms ease;
-    -ms-transition: font-size  400ms ease;
-    -o-transition: font-size  400ms ease;
-    transition: font-size  400ms ease;
+    -webkit-transition: font-size 800ms ease;
+    -moz-transition: font-size  800ms ease;
+    -ms-transition: font-size  800ms ease;
+    -o-transition: font-size  800ms ease;
+    transition: font-size  800ms ease;
 }   
 
 #border-bottom h2{     
@@ -526,11 +526,11 @@ display: none;
     padding-bottom: 18px;
     margin-bottom: 20px;
     
-    -webkit-transition: text-align 400ms ease;
-    -moz-transition: text-align  400ms ease;
-    -ms-transition: text-align  400ms ease;
-    -o-transition: text-align  400ms ease;
-    transition: text-align  400ms ease;
+    -webkit-transition: text-align 800ms ease;
+    -moz-transition: text-align  800ms ease;
+    -ms-transition: text-align  800ms ease;
+    -o-transition: text-align  800ms ease;
+    transition: text-align  800ms ease;
 }
 
 .no-rgba #movie h2 {
@@ -663,11 +663,11 @@ display: none;
     font-size: 16px;
     font-style: italic;
     color: #5e6c74;
-    -webkit-transition: padding 400ms ease;
-    -moz-transition: padding  400ms ease;
-    -ms-transition: padding  400ms ease;
-    -o-transition: padding  400ms ease;
-    transition: padding  400ms ease;
+    -webkit-transition: padding 800ms ease;
+    -moz-transition: padding  800ms ease;
+    -ms-transition: padding  800ms ease;
+    -o-transition: padding  800ms ease;
+    transition: padding  800ms ease;
 
 }
 #overflow h2 img{
@@ -675,11 +675,11 @@ display: none;
     top:-67px;
     left: -40px;
     
-    -webkit-transition: top 400ms ease;
-    -moz-transition: top  400ms ease;
-    -ms-transition: top  400ms ease;
-    -o-transition: top  400ms ease;
-    transition: top  400ms ease;
+    -webkit-transition: top 800ms ease;
+    -moz-transition: top  800ms ease;
+    -ms-transition: top  800ms ease;
+    -o-transition: top  800ms ease;
+    transition: top  800ms ease;
 }
 #overflow .content {
     padding: 0px 10px;
@@ -688,11 +688,11 @@ display: none;
     max-width: 730px;
     clear: both;
     margin-bottom: 5%;
-    -webkit-transition: margin 400ms ease;
-    -moz-transition: margin  400ms ease;
-    -ms-transition: margin  400ms ease;
-    -o-transition: margin  400ms ease;
-    transition: margin  400ms ease;
+    -webkit-transition: margin 800ms ease;
+    -moz-transition: margin  800ms ease;
+    -ms-transition: margin  800ms ease;
+    -o-transition: margin  800ms ease;
+    transition: margin  800ms ease;
 }
 #overflow .content p:nth-child(3n+1){
     float: right;
@@ -729,11 +729,11 @@ display: none;
     font-family: 'Lato', sans-serif;
     font-size: 17px;
     
-    -webkit-transition: padding 400ms ease;
-    -moz-transition: padding  400ms ease;
-    -ms-transition: padding  400ms ease;
-    -o-transition: padding  400ms ease;
-    transition: padding  400ms ease;
+    -webkit-transition: padding 800ms ease;
+    -moz-transition: padding  800ms ease;
+    -ms-transition: padding  800ms ease;
+    -o-transition: padding  800ms ease;
+    transition: padding  800ms ease;
 }
 
 #footer strong{
@@ -898,7 +898,7 @@ display: none;
         z-index: 2;
     }
     #famous .map:hover img {
-        top: -637px;
+        left: 960px;
     }
     #famous .map iframe {
         position: absolute;
@@ -906,9 +906,6 @@ display: none;
         left: 0px;
         display: block;
         z-index: 1;
-    }
-    #famous .map:hover img {
-        top: -637px;
     }
 }
 @media only screen and (min-width: 1024px) {
@@ -987,9 +984,6 @@ display: none;
     #footer {
         padding: 23px 0px 60px;
     }
-
-}
-@media only screen and (min-width: 1140px) {
 
 }
 
