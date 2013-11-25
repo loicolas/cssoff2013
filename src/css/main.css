@@ -283,12 +283,20 @@ p {
     -o-transition: -o-transform 400ms ease;
     transition: transform 400ms ease;
 }
+#bullet li:nth-child(3) img{
+     -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
 #bullet li:hover img{
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    transform: scale(1.1);
+    -webkit-transform: scale(0.9) rotate(30deg);
+    -moz-transform: scale(0.9) rotate(30deg);
+    -ms-transform: scale(0.9) rotate(30deg);
+    -o-transform: scale(0.9) rotate(30deg);
+    transform: scale(0.9) rotate(30deg);
 }
 
 #bullet li figcaption {
@@ -373,10 +381,21 @@ p {
     -o-transition: font-size 400ms ease, line-height 400ms ease;
     transition: font-size 400ms ease, line-height 400ms ease;
 }
+
 #famous img{
     max-width: 100%;
     margin-bottom: 20px;
+    -webkit-transition: top 400ms ease;
+    -moz-transition: top 400ms ease;
+    -ms-transition: top 400ms ease;
+    -o-transition: top 400ms ease;
+    transition: top 400ms ease;
 }
+
+#famous .map iframe {
+    display: none;
+}
+
 #famous p{
     padding: 0px 25px;
     margin-bottom: 25px;
@@ -865,6 +884,33 @@ display: none;
    
 }
 
+@media only screen and (min-width: 960px) {
+    #famous .map {
+        position: relative;
+        width: 960px;
+        height: 637px;
+        overflow:hidden;
+    }
+    #famous .map img {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 2;
+    }
+    #famous .map:hover img {
+        top: -637px;
+    }
+    #famous .map iframe {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        display: block;
+        z-index: 1;
+    }
+    #famous .map:hover img {
+        top: -637px;
+    }
+}
 @media only screen and (min-width: 1024px) {
      #logo span {
         right: 0px;
@@ -877,6 +923,21 @@ display: none;
     #bullet li:nth-child(n) {
         width: 20%;
     }
+    
+    #bullet li:nth-child(3) img{
+       -webkit-transform: rotate(0deg);
+       -moz-transform: rotate(0deg);
+       -ms-transform: rotate(0deg);
+       -o-transform: rotate(0deg);
+       transform: rotate(0deg);
+   }
+    #bullet li:nth-child(3):hover img{
+       -webkit-transform: scale(0.9) rotate(30deg);
+       -moz-transform: scale(0.9) rotate(30deg);
+       -ms-transform: scale(0.9) rotate(30deg);
+       -o-transform: scale(0.9) rotate(30deg);
+       transform: scale(0.9)  rotate(30deg);
+   }
     
     #border-bottom { 
         width: 75%;
@@ -919,7 +980,7 @@ display: none;
     }
 
     #overflow .content p:nth-child(3n+1){
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
     
     
